@@ -1,0 +1,13 @@
+﻿@page
+@model AddCategoryModel
+
+<form method ="post">
+ 
+    <label for="exampleFormControlInput1">Category Name</label>
+    <input type="text" class="form-control" name = "categoryName" placeholder="Category name">
+    <label for="exampleFormControlInput1">Category PRICE</label>
+    <input type="text" class="form-control" name = "categoryPrice" placeholder="Category price">
+   <button type="submit" class="btn btn-primary mb-2">Confirm</button>
+</form>
+
+<p>@Model.chuoi</p>

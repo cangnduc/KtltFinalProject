@@ -1,0 +1,48 @@
+﻿@page
+@using _21810203.DAL;
+@using _21810203.Entities;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    
+}
+
+<div class="text-center">
+     
+    <label for="cars">Choose a car:</label>
+    <form method = "get" id ='Cateform'>
+   
+        <select id="Cate" name="CateList" form="Cateform">
+ 
+         @foreach(Category c in Model.CuaHang)
+        {
+            <option value = "@c.name">@c.name</option>
+        }
+        </select>
+        <button type ='submit'>Go</button>
+     </form>
+     <table>
+         <tr>
+             <th>ID</th>
+             <th>name</th>
+             <th>Price</th>
+         </tr>
+        @foreach (Product p in Model.Products)
+        {
+             <tr>
+             <th>@p.id</th>
+             <th>@p.name</th>
+             <th>@p.price
+             </th>
+         </tr>
+        }
+       
+     </table>
+</div>
+
+
+
+    
+     
+
+  

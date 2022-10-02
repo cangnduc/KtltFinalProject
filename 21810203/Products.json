@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "keo",
+    "dsach": [
+      {
+        "Id": 1,
+        "Name": "keome",
+	"Price":200
+      },
+ {
+        "Id": 2,
+        "Name": "keodua",
+	"Price":200
+      }, {
+        "Id": 1,
+        "Name": "keome"
+      },
+ {
+        "Id": 2,
+        "Name": "keodua"
+      }
+    ]
+  },
+  {
+    "Name": "thuoc",
+    "dsach": [
+      {
+        "Id": 1,
+        "Name": "Jet"
+      },
+{
+        "Id": 2,
+        "Name": "Hero"
+      }
+    ]
+  },
+{
+    "Name": "xe",
+    "dsach": [
+      {
+        "Id": 1,
+        "Name": "Jet"
+      },
+{
+        "Id": 2,
+        "Name": "Hero"
+      }
+    ]
+  }
+]
