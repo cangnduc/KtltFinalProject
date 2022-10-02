@@ -4,44 +4,54 @@
     "dsach": [
       {
         "Id": 1,
-        "Name": "keome"
+        "Name": "keome",
+	"Price":200,
+	"Expiration":"20/10/2022"
       },
  {
         "Id": 2,
-        "Name": "keodua"
+        "Name": "keodua",
+	"Price":200,
+	"Expiration":"20/10/2022"
       }, {
+        "Id": 3,
+        "Name": "keokhom",
+	"Price":300,
+	"Expiration":"20/10/2022"
+      },
+ {
+        "Id": 4,
+        "Name": "keoxx",
+	"Price":400,
+	"Expiration":"20/10/2022"
+      }
+    ]
+  },
+ {
+    "Name": "banh",
+    "dsach": [
+      {
         "Id": 1,
-        "Name": "keome"
+        "Name": "banh me",
+	"Price":200,
+	"Expiration":"20/10/2022"
       },
  {
         "Id": 2,
-        "Name": "keodua"
-      }
-    ]
-  },
-  {
-    "Name": "thuoc",
-    "dsach": [
-      {
-        "Id": 1,
-        "Name": "Jet"
+        "Name": "banh dua",
+	"Price":200,
+	"Expiration":"20/10/2022"
+      }, {
+        "Id": 3,
+        "Name": "banh khom",
+	"Price":300,
+	"Expiration":"20/10/2022"
       },
-{
-        "Id": 2,
-        "Name": "Hero"
-      }
-    ]
-  },
-{
-    "Name": "xe",
-    "dsach": [
-      {
-        "Id": 1,
-        "Name": "Jet"
-      },
-{
-        "Id": 2,
-        "Name": "Hero"
+ {
+        "Id": 4,
+        "Name": "banh xx",
+	"Price":400,
+	"Expiration":"20/10/2022"
       }
     ]
   }

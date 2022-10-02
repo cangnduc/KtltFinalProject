@@ -8,36 +8,66 @@
 }
 
 <div class="text-center">
-     
-    <label for="cars">Choose a car:</label>
-    <form method = "get" id ='Cateform'>
+   <div class = "container">
+       <form>
+       <div class = "row">
+           <div class = "col-2">
+               <input type="text" class ="form-control" placeholder="Enter product name" />
+           </div>
+            <div class = "col-2">
+               <select class="form-control">
+                   <option>All</option>
+                        @foreach(var items in Model.CuaHang)
+                        {
+                            <option>@items.name</option>
+                        }
+                    </select>
+           </div>
+            <div class = "col-1">
+               <button class ="btn btn-primary">Search</button>
+           </div>
+       </div>
+       </form>
+   </div>
    
-        <select id="Cate" name="CateList" form="Cateform">
- 
-         @foreach(Category c in Model.CuaHang)
-        {
-            <option value = "@c.name">@c.name</option>
-        }
-        </select>
-        <button type ='submit'>Go</button>
-     </form>
-     <table>
-         <tr>
-             <th>ID</th>
-             <th>name</th>
-             <th>Price</th>
-         </tr>
-        @foreach (Product p in Model.Products)
-        {
+     <table class = "table">
+         <thead>
              <tr>
-             <th>@p.id</th>
-             <th>@p.name</th>
-             <th>@p.price
-             </th>
-         </tr>
-        }
-       
+                 <th>ID</th>
+                 <th>Name</th>
+                 <th>Price</th>
+                 <th>Expiration</th>
+                  <th>Cate</th>
+                  <th>Action</th>
+             </tr>
+         </thead>
+         <tbody>
+            
+                @foreach(var items in Model.CuaHang)
+                {
+                     
+                  
+                    foreach(var item in items.dsach)
+                    { <tr>
+                         <th>@item.id</th>
+                        <th>@item.name</th>
+                        <th>@item.price</th>
+                        <th>@item.Expiration</th>
+                        <th>@items.name</th>
+                        <th>
+                            <a class ="btn btn-primary" href="/edit?id=@item.id&name=@items.name">Edit</a>
+                            <a class ="btn btn-danger" href="/edit?id=@item.id&name=@items.name">Delete</a>
+                        </th>
+                         </tr>
+                    }
+                   
+                    
+                     
+                }
+          
+         </tbody>
      </table>
+   
 </div>
 
 

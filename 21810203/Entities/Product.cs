@@ -5,11 +5,12 @@
         public int id;
         public string name;
         public double price;
+        public string Expiration;
     }
     public struct Category
     {
         public string name;
-        public List<Product> dsach
-;   }
+        public List<Product> dsach;
+   }
 
 }
