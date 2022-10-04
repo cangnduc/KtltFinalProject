@@ -1,10 +1,7 @@
 ﻿@page
-@using _21810203.DAL;
-@using _21810203.Entities;
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    
 }
 
 <div class="text-center">
@@ -15,11 +12,12 @@
                <input type="text" class ="form-control" placeholder="Enter product name" />
            </div>
             <div class = "col-2">
-               <select class="form-control">
+               <select class="form-control" name = "CateName">
                    <option>All</option>
                         @foreach(var items in Model.CuaHang)
                         {
                             <option>@items.name</option>
+                            
                         }
                     </select>
            </div>
@@ -42,7 +40,6 @@
              </tr>
          </thead>
          <tbody>
-            
                 @foreach(var items in Model.CuaHang)
                 {
                      
@@ -56,7 +53,7 @@
                         <th>@items.name</th>
                         <th>
                             <a class ="btn btn-primary" href="/edit?id=@item.id&name=@items.name">Edit</a>
-                            <a class ="btn btn-danger" href="/edit?id=@item.id&name=@items.name">Delete</a>
+                            <a class ="btn btn-danger" href="/delete?id=@item.id&name=@items.name">Delete</a>
                         </th>
                          </tr>
                     }
@@ -69,7 +66,6 @@
      </table>
    
 </div>
-
 
 
     

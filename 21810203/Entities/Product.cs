@@ -6,6 +6,7 @@
         public string name;
         public double price;
         public string Expiration;
+        //public Category LoaiHang;
     }
     public struct Category
     {

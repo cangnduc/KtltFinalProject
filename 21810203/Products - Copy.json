@@ -1,0 +1,48 @@
+[
+  {
+    "name": "keo",
+    "dsach": [
+      {
+        "id": 1,
+        "name": "keome",
+        "price": 2000,
+        "Expiration": "20/10/2022"
+      },
+      {
+        "id": 2,
+        "name": "keodua",
+        "price": 3000,
+        "Expiration": "20/10/2022",
+        
+      },
+      {
+        "id": 3,
+        "Name": "keokhom",
+        "price": 4000,
+        "Expiration": "20/10/2022"
+      }
+    ]
+  },
+  {
+    "Name": "thuoc",
+    "dsach": [
+    {  "id": 1,
+      "name": "thuocme",
+      "price": 2000,
+      "Expiration": "20/10/2022"
+    },
+    {
+      "id": 2,
+      "Name": "thuocdua",
+      "price": 3000,
+      "Expiration": "20/10/2022"
+    },
+    {
+      "id": 3,
+      "name": "thuockhom",
+      "price": 4000,
+      "Expiration": "20/10/2022"
+    }
+  ]
+}
+]
